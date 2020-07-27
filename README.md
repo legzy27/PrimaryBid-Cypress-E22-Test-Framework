@@ -7,7 +7,7 @@ PrimaryBid Automated Test was developed using `Cypress` End-To-End(E2E) testing 
 
 ## Installation and Setup
 
-1. Clone the repository
+1. Clone the repository https://github.com/legzy27/PrimaryBid-Cypress-E22-Test-Framework.git
 2. Once you download the repository cd into the directory 
 3. Install necessary dependencies with `npm install` before the cypress E2E tests can run locally
 4. To launch the test locally use the command `npx cypress open`. this will launch the cypress  window and run the test
