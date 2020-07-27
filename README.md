@@ -16,4 +16,4 @@ PrimaryBid Automated Test was developed using `Cypress` End-To-End(E2E) testing 
 
 
 ## Observation 
-* App didn't pass a Google Mobile-Friendly Test
+* App didn't pass Google Mobile-Friendly Test
