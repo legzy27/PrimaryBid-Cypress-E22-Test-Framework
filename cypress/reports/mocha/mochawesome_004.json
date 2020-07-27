@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-27T15:20:24.495Z",
+    "end": "2020-07-27T15:20:38.886Z",
+    "duration": 14391,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "905417b8-3c2b-4ebd-a385-32ad2813ea3b",
+      "title": "",
+      "fullFile": "cypress/integration/primarybidQA/TC05_SignUpVadlidate.spec.js",
+      "file": "cypress/integration/primarybidQA/TC05_SignUpVadlidate.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4193689-eda9-46bf-a132-c425b7093a2f",
+          "title": "SignUp Validate Link",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate To Sign Up Page ",
+              "fullTitle": "SignUp Validate Link Navigate To Sign Up Page ",
+              "timedOut": null,
+              "duration": 14364,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = Cypress.env('username');\nvar password = Cypress.env('password');\ncy.visit('https://playground.primarybid.com', {\n  auth: {\n    username: username,\n    password: password\n  }\n});\ncy.wait(3000);\ncy.contains('Sign up').should('be.visible').click();\nfunction Name_Alpha_Email() {\n  var text = \"\";\n  var possible = \"primary1233456789@yahoo.com\";\n  for (var i = 0; i < 10; i++) {\n    text += possible.charAt(Math.floor(Math.random() * possible.length));\n  }\n  return text;\n} //generate the string and store it in a variable\n\nvar randomEmail = Name_Alpha_Email();\ncy.get('input[name=\"email\"]').type(randomEmail);\ncy.wait(3000);\nfunction Name_Alpha_Password() {\n  var text = \"\";\n  var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";\n  for (var i = 0; i < 10; i++) {\n    text += possible.charAt(Math.floor(Math.random() * possible.length));\n  }\n  return text;\n}\nvar randomPassword = Name_Alpha_Password();\ncy.get('input[name=\"password\"]').type(randomPassword);\ncy.wait(3000);\nfunction Name_Alpha_Confirmpassword() {\n  var text = \"\";\n  var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";\n  for (var i = 0; i < 10; i++) {\n    text += possible.charAt(Math.floor(Math.random() * possible.length));\n  }\n  return text;\n}\nvar randomConfirmpassword = Name_Alpha_Confirmpassword();\ncy.get('input[name=\"confirmPassword\"]').type(randomConfirmpassword);\ncy.wait(3000);\ncy.get('.cta-1').click();",
+              "err": {},
+              "uuid": "a0edfc57-4e23-4743-8af7-9774833ce0d2",
+              "parentUUID": "f4193689-eda9-46bf-a132-c425b7093a2f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a0edfc57-4e23-4743-8af7-9774833ce0d2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14364,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-27T15:19:35.736Z",
+    "end": "2020-07-27T15:19:40.155Z",
+    "duration": 4419,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ed232b28-22d6-4b51-a5fd-c44d9cebb3c2",
+      "title": "",
+      "fullFile": "cypress/integration/primarybidQA/TC01_AboutUs.spec.js",
+      "file": "cypress/integration/primarybidQA/TC01_AboutUs.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "020cd9b7-d021-4e25-9015-7f6f64de9faa",
+          "title": "About Tab Link",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate About Us Page ",
+              "fullTitle": "About Tab Link Navigate About Us Page ",
+              "timedOut": null,
+              "duration": 4380,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = Cypress.env('username');\nvar password = Cypress.env('password');\ncy.visit('https://playground.primarybid.com', {\n  auth: {\n    username: username,\n    password: password\n  }\n});\ncy.wait(3000);\ncy.contains('About Us').should('be.visible').click();",
+              "err": {},
+              "uuid": "2fe6647d-83a2-4b58-a3a5-bcb8266dc095",
+              "parentUUID": "020cd9b7-d021-4e25-9015-7f6f64de9faa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2fe6647d-83a2-4b58-a3a5-bcb8266dc095"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4380,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
